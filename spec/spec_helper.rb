@@ -4,6 +4,8 @@ CI_ORM = (ENV['CI_ORM'] || :active_record).to_sym
 CI_TARGET_ORMS = [:active_record, :mongoid].freeze
 PK_COLUMN = {active_record: :id, mongoid: :_id}[CI_ORM]
 
+require 'appmap/rspec'
+
 require 'simplecov'
 require 'coveralls'
 

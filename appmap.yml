@@ -1,0 +1,6 @@
+name: rails_admin
+
+packages:
+- path: app/controllers
+- path: app/helpers
+- path: lib
